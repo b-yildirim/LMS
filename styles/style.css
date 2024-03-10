@@ -59,6 +59,20 @@ html {
   scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+  width: 0.8rem;
+  background-color: #fff;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 3rem;
+  background-color: var(--black-color);
+}
+
 body {
   background-color: var(--main-color);
 }
@@ -76,6 +90,18 @@ section {
   color: #ccc;
   background-color: var(--black-color);
   cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.heading {
+  color: black;
+  text-transform: capitalize;
+  font-size: 4rem;
+  margin-bottom: 3.5rem;
+  border-bottom: 0.1rem solid black;
 }
 
 .header .logo img {
