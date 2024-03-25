@@ -208,11 +208,52 @@ section {
   padding: 1rem 0;
 }
 
-.about p {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.8;
-  padding: 1rem 0;
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+}
+
+.about .row .image {
+  flex: 1 1 45rem;
+}
+
+.about .row img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 45rem;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
   color: var(--black-color);
-  text-transform: capitalize;
+}
+
+.about .row .content p {
+  font-size: 1.6rem;
+  color: var(--black-color);
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+.review .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.review .box-container .box {
+  border: var(--border);
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  border-radius: 3rem;
+}
+
+.review .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  padding: 2rem;
 }
