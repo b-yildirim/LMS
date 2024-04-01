@@ -81,6 +81,11 @@ section {
   padding: 3.5rem 7%;
 }
 
+a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -102,6 +107,14 @@ section {
   font-size: 4rem;
   margin-bottom: 3.5rem;
   border-bottom: 0.1rem solid black;
+}
+
+.search-input {
+  font-size: 1.6rem;
+  color: var(--black-color);
+  padding: 1rem;
+  text-transform: none;
+  border-radius: 3rem;
 }
 
 .header .logo img {
@@ -308,12 +321,91 @@ section {
   border: var(--border);
 }
 
-.contact .row form .inputBox i{
+.contact .row form .inputBox i {
   color: black;
   font-size: 2rem;
   padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.contact .row form .inputBox input{
+.contact .row form .inputBox input {
   width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  color: black;
+  text-transform: none;
+  background-color: none;
+}
+
+.footer {
+  background-color: var(--black-color);
+  text-align: center;
+}
+
+.footer .search {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .search .search-input {
+  width: 30rem;
+}
+
+.footer .search .btn-primary {
+  background-color: var(--main-color);
+  padding: 1rem 2rem;
+  margin-left: 1rem;
+  margin-top: auto;
+  color: var(--black-color);
+}
+
+.footer .share {
+  padding: 2rem 0;
+}
+
+.footer .share a {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  color: var(--main-color);
+  font-size: 2rem;
+  border: var(--border);
+  border-radius: 50%;
+  margin: 0.3rem;
+  cursor: pointer;
+}
+
+.footer .share a:hover {
+  background-color: rgb(67, 67, 67);
+}
+
+.footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer .links a {
+  background-color: var(--main-color);
+  padding: 0.7rem 2rem;
+  color: #fff;
+  font-size: 2rem;
+  border: var(--border);
+}
+
+.footer .links a:hover {
+  background-color: var(--black-color);
+  opacity: 0.7;
+}
+
+.footer .credit {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 300;
+  padding-top: 1.5rem;
+}
+
+.footer .credit span {
+  color: var(--main-color);
 }
